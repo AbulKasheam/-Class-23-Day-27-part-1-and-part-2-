@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body {
+    font-family: "Rubik", sans-serif;
+}
+.textCenter{
+    text-align: center;
+}
+.textLeft{
+    text-align-last: left;
+}
+.textRight{
+    text-align: right;
+}
+a{
+    text-decoration: none;
+}
+.clear_fix:after{
+    content:"";
+    clear: both;
+    display:block;
+}
+.container{
+    width: 1224px;
+    height:100%;
+    margin:auto;
+}
+.container_fluid{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*main css*/
+.header_menu{
+    padding: 0 20px;
+    background: #ddd;
+    border-bottom: 1px solid #000;
+}
+
+.logo{
+    float: left;
+    width:20%;
+}
+.logo h1{
+    color: gray;
+}
+.menu{
+    
+    float:right;
+    width:80%;
+    text-align:right;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-right: 1px solid #fff;
+    margin-left: -4px;
+    position: relative;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+/*DropDown Menu */
+.menu ul li ul {
+    position: absolute;
+    background: #ddd;
+    top: 103%;
+    right: -30px;
+    width: 200px;
+    text-align: center;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.menu ul li ul li{
+    display:block;
+    border: none;
+    margin-left: 0;
+    
+}
+.menu ul li ul li:first-child{
+    border-left: none;
+}
+
+.menu ul ul ul {
+    position: absolute;
+    top: 15px;
+    right: -202px;
+}
+
+
+.menu ul li:first-child{
+    border-left: 1px solid #fff;
+}
+.menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1)
+}
+.menu ul li:hover > a{
+    color:gray;
+}
+
+
+/*Banner Section*/
+.banner_section{
+}
+.banner{
+    background-image: url("https://i.ibb.co/BP9mtyw/job-banner-5.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding:200px 0;
+    background-color: #043f3a9c;
+}
+.banner{
+    text-align: center;
+}
+.banner h1 {
+    color: white;
+    text-align: center;
+}
+.banner button {
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    padding: 9px 28px;
+    background: aqua;
+    color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition:.7s;
+}
+.banner button:hover{
+    background: none;
+    color: white;
+}
+    
+
+/* ABOUT SECTIONC CSS */
+.aboutSection{
+    background-color: #043f3a;
+    padding-bottom: 30px;
+}
+.about-left{
+    width:50%;
+    float: left;
+    text-align: center;
+}
+.about-left img{
+    border-radius: 50%;
+    margin-top: 230px;
+}
+.about-right{
+    width: 50%;
+    float: right;
+    margin-top: 80px;
+}
+.about-right span {
+    color: #e7bf28;
+   
+}
+.about-right h1 {
+    color: #fff;
+    padding: 18px 0;
+    font-size: 42px;
+}
+.about-right h2 {
+    color: #e7bf28;
+    font-size: 37px;
+}
+.about-right p {
+    font-size: 16px;
+    color: #afb4b9;
+    font-weight: normal;
+    line-height:30px;
+}
+.about-right ul{
+    margin-top: 30px;
+}
+.about-right ul li {
+    color: #fff;
+    padding: 9px;
+    list-style: none;
+}
+
+.about-right button {
+    background: #e7bf28;
+    padding: 8px 39px;
+    border: none;
+    margin-top: 74px;
+    color: white;
+    font-size: 20px;
+    transition:.7s;
+}
+.about-right button:hover{
+    transform: translateY(-3px);
+}
+.services {
+    margin-top: 30px;
+}
+.servic_title{
+
+}
+.servic_title h2{
+    color: #212529;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.servic_title h2 span{
+    color: #00a01d;
+}
+.servicesItems {
+    margin-top: 50px;
+    margin-bottom: 68px;
+}
+.item{
+    float: left;
+    width: 30%;
+    box-shadow: 0 0 10px #cccccc;
+    position: relative;
+    padding: 60px;
+    margin: 10px;
+    z-index: 1;
+}
+.before_h{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+}
+.before_h::before{
+    content: " ";
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 0;
+    left: 0;
+   
+}
+.overlay{
+    height: 100%;
+    width: 0%;
+    background-color: #00a01d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition:.6s;
+}
+.item:hover .overlay{
+    opacity: 1;
+    width: 100%;
+}
+.item i{
+    background: #00a01d;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    line-height:80px;
+    margin-bottom: 25px;
+    border: 2px solid #fff;
+    transition: all 0.35s ease-in-out;
+}
+.item:hover {
+    color: white;
+}
+.item:hover i{
+    background: #fff;
+    color:#00a01d;
+}
+.item h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.item p{
+    
+}
+.item p{}
+
+.item::after{
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: red;
+    z-index: 1;
+}
+
+.contactUs_section{
+    background-color: #000;
+
+}
+.contactLeft{
+    float: left;
+    width: 30%;
+    
+}
+.contact_form{
+    
+}
+.contactRight{
+    float: right;
+    width: 50%;
+}
+.contactLeft input{
+    padding: 10px 20px;
+    margin: 13px 0;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+.contactLeft form{
+    
+}
+
+
+
+
+
+

@@ -1,160 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment(c23)</title>
-    <!-- linkCDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header_menu">
-        <div class="nav clear_fix">
-            <div class="logo">
-                <a href="#">
-                   <h1>JOSI ALBA</h1>
-                </a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a>
-                        <ul>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Mobile App</a>
-                                <ul>
-                                    <li><a href="">iOs App</a></li>
-                                    <li><a href="">Android</a></li>
-                                    <li><a href="">Windos</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Advisiting</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">About US</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
+    <title>Grid And ColumN//</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">LFWF</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+          <ul class="nav navbar-nav main_menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Testimonial</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+         
         </div>
-    </div>
+      </div>
+    </nav>
 
-    <div class="banner_section">
 
-        <div class="banner">
-            <h1>WELCOME TO MY WEBSITE</h1>
-            <button>Buy Now</button>
 
-        </div>
-    </div>
-    <div class="aboutSection clear_fix">
-        <div class="about-left">
-            <img src="./img/kkk.png" alt="">
-        </div>
-        <div class="about-right">
-            <div class="abouts">
-                <span>ABOUT US!</span>
-                <h1>My Real Life is Up to You? I am a </h1>
-                <h2>Front-end Developer</h2>
-                <p>I’m a Front-end Developer and graphic designer living in India. I spend my days with my hands in many different areas of UI development from back end programming to front end engineering</p>
-                <ul>
-                    <li>Different of web development</li>
-                    <li>Gun Violence Prevention</li>
-                    <li>Eiusmod tempor incidid labore</li>
-                    <li>Graphic designer living</li>
-                    <li>Jiusmod tempor incididunt</li>
-                </ul>
-                <button>CV DOWNLOAD</button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- SERVICsECTION -->
-    <section class="services">
+      <section class=" part_1 bg-dark py-4 mt-4">
         <div class="container">
-
-            <div class="servic_title textCenter">
-                <h2>What we <span>Offer</span></h2>
-                <h4>Lorem Ipsum is simply dummy text</h4>
-                
+          <div class="row g-1">
+            <div class="col-xl-4">
+              <div class="d_1 text-center">
+                <span>Designed By LFWF</span>
+              </div>
             </div>
-            <div class="servicesItems clear_fix">
-                <div class="item textCenter">
-                    <div class="overlay"></div>
-                    <i class="fas fa-pen-fancy"></i>
-                    <h4>Project creation</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    </p>
-                </div>
-                <div class="item textCenter">
-                    <div class="overlay">
-
-                    </div>
-                    <i class="fas fa-dharmachakra"></i>
-                    <h4>Project creation</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    </p>
-                </div>
-                <div class="item textCenter">
-                    <div class="overlay"></div>
-
-                    <i class="fas fa-tasks"></i>
-                    <h4>Project creation</h4>
-                    <p class="textCenter">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    </p>
-                </div>
-                <div class="item textCenter">
-                    <div class="overlay"></div>
-                    <i class="fas fa-tachometer-alt"></i>
-                    <h4>Project creation</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    </p>
-                </div>
-                <div class="item textCenter">
-                    <div class="overlay"></div>
-                    <i class="fas fa-headset"></i>
-                    <h4>Project creation</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    </p>
-                </div>
-                <div class="item textCenter">
-                    <div class="overlay"></div>
-                    <i class="fas fa-recycle"></i>
-                    <h4>Project creation</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    </p>
-                </div>
+            <div class="col-xl-4">
+              <div class="d_1 text-center">
+                <span>Designed By LFWF</span>
+              </div>
             </div>
+            <div class="col-xl-4">
+              <div class="d_1 text-center">
+                <span>Designed By LFWF</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <div class="contactUs_section clear_fix">
+      </section>
+      <section class=" part_2 bg-dark py-4 mt-4">
         <div class="container">
-
-            <div class="contactLeft">
-                <div class="contact_form">
-
-                    <form action="#">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="phone" placeholder="Enter Number">
-                        <input type="email" placeholder="E-mail">
-                        <input type="password" placeholder="Password">
-                        <input type="submit" value="submit">
-                        <input type="reset" value="Reset">
-                    </form>
-                </div>   
+          <div class="row g-0">
+            <div class="col-xl-4">
+              <div class="d_2 text-center">
+                <span>Designed By LFWF</span>
+              </div>
             </div>
-            
-                 <div class="contactRight">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117658.98533138476!2d89.46246096984252!3d22.845286582926555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9071cb47152f%3A0xf04b212290718952!2sKhulna!5e0!3m2!1sen!2sbd!4v1620137929049!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                 </div>
-            
+            <div class="col-xl-4">
+              <div class="d_2 text-center">
+                <span>Designed By LFWF</span>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="d_2 text-center mt-1">
+                <span>Designed By LFWF</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </section>
+      <section class=" part_3 bg-dark py-4 mt-4">
+        <div class="container">
+          <div class="row g-2">
+            <div class="col-xl-4">
+              <div class="d_3 text-center">
+                <span>Designed By LFWF</span>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="d_3 text-center">
+                <span>Designed By LFWF</span>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="d_3 text-center mt-1">
+                <span>Designed By LFWF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="part_4 bg-dark py-4 mt-4">
+        <div class="container">
+          <div class="row g-1">
+            <div class="col-xl-6">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="d_4 text-center mt-1">
+                    <span>Designed By LFWF</span>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="d_4 text-center mt-1">
+                    <span>Designed By LFWF </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6"></div>
+          </div>
+        </div>
+      </section>
+      <section class="about p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4">
+              <div class="a_img">
+                <img class="w-100 " src="./img/188875623_171850588113698_7180751363185504795_n.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-xl-8">
+              <div class="a_about">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</h3>
+                <span>Someone famous in Source Title</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class=" bg-dark py-4 mt-4">
+        <div class="container ">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="f_content text-center">
+                <p class="text-muted">Copyright © 2021 Designed by LFWF. All rights reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
 
-   
-</body>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
 </html>
